@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yönetici Paneli</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Kayıtlı Kullanıcılar</h1>
+        <table border="1">
+          tr>
+                <th>ID</th>
+                <th>Kullanıcı Adı</th>
+                <th>Email</th>
+                <th>Gen</th>
+            </tr>
+            {% for user in users %}
+            <tr>
+                <td>{{ user[0] }}</td>
+                <td>{{ user[1] }}</td>
+                <td>{{ user[2] }}</td>
+                <td>{{ user[3] }}</td>
+            </tr>
+            {% endfor %}
+          </table>
+        
+        <br>
+        <form action="{{ url_for('reset_users') }}" method="POST" onsubmit="return confirm('Tüm kayıtları silmek istediğinize emin misiniz?')">
+            <button type="submit" style="background-color: red; color: white; padding: 10px; border: none; cursor: pointer;">
+                Kayıtları Sıfırla
+            </button>
+        </form>
+
+        <br>
+        <a href="{{ url_for('logout') }}">Çıkış Yap</a>
+    </div>
+</body>
+</html>

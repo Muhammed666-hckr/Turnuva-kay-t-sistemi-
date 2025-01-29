@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnuva Kayıt Sistemi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Panel (Şu an için istemiyorsunuz, o yüzden kaldırdık) -->
+        <!-- <div class="panel" id="panel">
+            <a href="{{ url_for('index') }}">Anasayfa</a>
+        </div> -->
+        
+        <!-- Mesaj -->
+        <p class="welcome-message">Turnuva Kayıt Sistemine Hoş Geldiniz! FC Mobile Turnuva katılmak için bu tuşa basın</p>
+        
+        <!-- Kayıt Ol butonu, "/register" sayfasına yönlendirecek -->
+        <a href="/register" class="register-button">Kayıt Ol</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+body {
+    background-image: url("../static/images/background.jpg"); /* Arka plan */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Sayfanın tamamını kaplasın */
+    margin: 0;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.5); /* Arka plana şeffaf siyah kutu */
+    padding: 20px;
+    border-radius: 10px;
+}
+/* Hoş geldiniz mesajı */
+.welcome-message {
+    font-size: 24px;       /* Yazı boyutunu büyütüyoruz */
+    color: white;          /* Yazı rengini beyaz yapıyoruz */
+    text-align: center;    /* Metni ortalıyoruz */
+    margin-bottom: 20px;   /* Mesaj ile buton arasında boşluk */
+    padding: 10px;         /* Mesaja biraz iç boşluk ekliyoruz */
+}
+/* Kayıt ol butonunun stili */
+.register-button {
+    display: inline-block;
+    background-color: red;  /* Butonun kırmızı rengi */
+    color: white;           /* Butonun yazı rengi beyaz */
+    padding: 20px 40px;     /* Butonun içindeki boşluk */
+    font-size: 22px;        /* Buton yazı boyutunu büyütüyoruz */
+    text-align: center;     /* Buton yazısını ortalıyoruz */
+    border-radius: 5px;     /* Yuvarlatılmış köşeler */
+    text-decoration: none;  /* Bağlantının altını kaldırıyoruz */
+    transition: background-color 0.3s ease; /* Hover efekti için geçiş */
+}
+
+/* Butona hover efekti (üzerine gelince rengi değişir) */
+.register-button:hover {
+    background-color: #ff4d4d;  /* Butonun rengini biraz daha koyulaştırıyoruz */
+}
+/* Konteyner */
+.container {
+    background: rgba(0, 0, 0, 0.5); /* Arka plana şeffaf siyah kutu */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;   /* Dikey hizalama */
+    justify-content: center;   /* Yatayda ortalıyoruz */
+    align-items: center;      /* Dikeyde ortalıyoruz */
+    height: 100%;             /* Tam ekranı kapsayacak şekilde */
+    padding-top: 50px;        /* Üstten biraz boşluk */
+}
